@@ -35,29 +35,34 @@ functional testing before this lab
 
 # High-level description of the exploratory testing plan
 
-In order to create a useful exploratory testing plan, first we reviewed the requirements document contained within Appendix B. This review identified a number of system behaviours and constraints that the software must meet. Once we identified these behaviours and constraints, we used them to generate use-cases which would model the end user behaviour. Our exploratory testing plan was not designed to be fully exhaustive, however we did design it to include at least two tests for every major system behavior listed in the requirements document, one positive test (normal behaviour expected to function normally), and one negative test where possible(abnormal behaviour expected to fail). We also included additional test cases for any specific constraints outlined within the requirements document (eg. only dispensing $20 bills). When a specific behaviour could have multiple options such as transferring money between a selection of accounts, we only decided to test one combination to test the underlying functionality, rather than the specific combination of accounts. This is an area that could be investigated further during scripted or exhaustive testing. 
+In order to create a useful exploratory testing plan, first we reviewed the requirements document contained within Appendix B. This review identified a number of system behaviours and constraints that the software must meet. Once we identified these behaviours and constraints, we used them to generate a list of common use-cases which would model the end user behaviour. As this was exploratory rather than scripted, our testing plan was not intended to be fully exhaustive, instead we designed it to provide opportunities to explore most or all of the use cases, and to perform roughly two tests for every major system behavior listed in the requirements document. We wanted the tester to explore one positive test (normal behaviour expected to function normally), and one negative test where possible (abnormal behaviour expected to fail). We also did additional exploratio for any specific constraints outlined within the requirements document (eg. only dispensing $20 bills). When a specific behaviour could have multiple options such as transferring money between a selection of accounts, we only decided to test one combination to test the underlying functionality, rather than the specific combination of inputs. This is an area that could be investigated further during scripted or exhaustive testing. 
 
-We felt that this plan structure would allow us to give a wide range of attention to the overall performance of the system, and give insight into any areas which would warrant further attention if necessary for a more in-depth series of tests.
+We felt that this framework would allow us to give a wide span of attention to the overall performance of the system, and give insight into any areas which would warrant further attention if necessary for a more in-depth series of tests.
 
-A list of the identified behaviours, the associated positive and negative tests, and any additional test cases are listed below.
+A list of the identified use-case actions, the associated positive and negative tests that we performed while exploring, and any additional test cases are listed below.
 
-| Behaviour | Positive Test Case | Negative Test Case | 
+| Behaviour | Positive Exploratory action | Negative Exploratory action | 
 | ----------| -------------------| -------------------| 
 | User inserts card | Valid Card number | Invalid Card Number | 
 | User enters pin | Valid pin for valid card | Invalid pin for valid card |
 | Cash withdrawal | Amount less than in account | Amount more than in account | 
+| Deposit money   | 
 | Transfer Money  | Amount less than in account 1 | Amount more than in account 1|
 | Balance Inquiry | Account listed on the display | Invalid account |
-| Cancel transaction | Cancel during valid transaction | N/A |
 | Operator switch | Toggled while no customer present | Toggled while customer is present | 
-
 
 | Additional test cases | 
 | ----------------------|
 | Withdrawal of amount not in denominations of $20 |
 | Pin retry, incorrect pin, followed by correct pin | 
+| Cancel transaction | Cancel during valid transaction |
 | Retain card, three incorrect pin tries | 
 | Examine log entries, complete, no pin #s |
+
+One hour of exploratory testing and bug recording following the above test plan resulted in 6 bugs being recorded and tracked.
+
+![Exploratory Bug List](Exploratory_Bugs.png "Bugs found during exploratory testing")
+
 
 # Comparison of exploratory and manual functional testing
 
