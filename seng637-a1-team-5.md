@@ -63,6 +63,7 @@ One hour of exploratory testing and bug recording following the above test plan 
 
 ![Exploratory Bug List](Exploratory_Bugs.png "Bugs found during exploratory testing")
 
+![Sample Bug Report](Exploratory_Bug_Report_Sample.png "Example bug report")
 
 # Comparison of exploratory and manual functional testing
 
