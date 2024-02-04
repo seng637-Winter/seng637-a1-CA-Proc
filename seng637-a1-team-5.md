@@ -38,7 +38,7 @@ All of the group members have prior experience with exploratory software testing
 
 In order to create a useful exploratory testing plan, all members needed to be familiar with the SUT. First we reviewed the requirements document contained within Appendix B. This review identified a number of system behaviours and constraints that the software must meet. As well, each team member independently completed the system familiarization, outlined within the assignment document.
 
-As this was exploratory rather than scripted, our testing plan was not intended to be fully exhaustive. Instead we proposed to provide opportunities to explore most or all of the use cases, and to perform roughly two tests for every major system behavior listed in the requirements document. We wanted the tester to explore one positive test (normal behaviour expected to function normally), and one negative test where possible (abnormal behaviour expected to fail). We also encouraged exploring any specific constraints outlined within the requirements document (eg. only dispensing $20 bills). Testers were encouraged to dig deeper if they saw any errors, or were curious about a behaviour. When a function could have multiple options such as transferring money between a selection of accounts, testers weren't directed to exhaustively test all the options, but to only pick ore or two. This is an area that could be investigated further during scripted or exhaustive testing. 
+As this was exploratory rather than scripted, our testing plan was not intended to be fully exhaustive. Instead we proposed to provide opportunities to explore most or all of the use cases, and to perform roughly two tests for every major system behavior listed in the requirements document. We wanted the tester to explore one positive test (normal behaviour expected to function normally), and one negative test where possible (abnormal behaviour expected to fail). We also encouraged exploring any specific constraints outlined within the requirements document (eg. only dispensing $20 bills). Testers were encouraged to dig deeper if they saw any errors, or were curious about a behaviour. When a function could have multiple options such as transferring money between a selection of accounts, testers weren't directed to exhaustively test all the options, but to only pick one or two. This is an area that could be investigated further during scripted or exhaustive testing. 
 
 We felt that this framework would allow us to give a wide span of attention to the overall performance of the system, and give insight into any areas which would warrant further attention if necessary for a more in-depth series of tests.
 
@@ -69,7 +69,7 @@ This log summarizes the notes that the pair testers took when conducting explora
 | User inserts card | Valid Card number | Invalid Card Number | 
 | User enters pin | Valid pin for valid card | Invalid pin for valid card |
 | Cash withdrawal | Amount less than in account | Amount more than in account | 
-| Deposit money   | Correct deposit | Invalid Amounts
+| Deposit money   | Correct deposit | Invalid Amounts |
 | Transfer Money  | Amount less than in account 1 | Amount more than in account 1|
 | Balance Inquiry | Account listed on the display | Invalid account |
 | Operator switch | Toggled while no customer present | Toggled while customer is present | 
@@ -84,7 +84,7 @@ This log summarizes the notes that the pair testers took when conducting explora
 
 
 ### Results
-One hour of exploratory testing and bug recording following the above test plan resulted in 6 bugs being recorded and tracked.
+One hour of exploratory testing per team following the above test plan resulted in 6 bugs being recorded and tracked.
 
 Bugs found during exploratory testing: 
 
@@ -195,7 +195,7 @@ A final consolidated report of all of the individual bug reports and fixes is av
 
 # Comparison of exploratory and manual functional testing
 
-During this assignment, both Exploratory and Manual Functional Testing were used, and both resulted in bugs being discovered and reported, including several overlapping reports. Exploratory testing intially found 6 bugs on Version 1.0 of the SUT. MFT on the same version confirmed 5 of those bugs, and found 3 additional bugs. Overall, both were effective at finding bugs, however the exploratory testing did manage to find a critical, high-priority bug (#7) that MFT missed. V1.1 was only tested with MFT, so no comparisons can be made.
+During this assignment, both Exploratory and Manual Functional Testing were used. Both methods resulted in bugs being discovered and reported, including several errors identified by both. Exploratory testing intially found 6 bugs on Version 1.0 of the SUT. MFT on the same version confirmed 5 of those bugs, and found 4 additional bugs. Overall, both were effective at finding bugs, however the exploratory testing did manage to find a critical, high-priority bug (#7) that MFT missed. V1.1 was only tested with MFT, so no comparisons can be made.
 
 #### Bugs found in V1.0 by method
 | Exploratory Only | MFT Only | Both |
@@ -211,7 +211,7 @@ During this assignment, both Exploratory and Manual Functional Testing were used
 - More engaging to the testers.
 #### Cons
 - Hard to ensure complete or balanced coverage of all functions and use cases.
-- Less repeatability in testing, outside of generated bug reports
+- Less repeatability in testing, aside from re-testing generated bug reports
 - Required high familiarity with the SUT, and lots of cross-referencing with the design document to assess expected behavior.
 - Effectiveness depends on the enthusiasm and skill of the tester.
 
