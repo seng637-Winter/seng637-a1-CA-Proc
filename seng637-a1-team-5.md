@@ -94,8 +94,8 @@ Sample Bug Report:
 
 ![Sample Bug Report](media/Exploratory_Bug_Report_Sample.png "Example bug report")
 
-# Manual functional testing logs - V1.0 and V1.1
-### Version 1.0
+### Manual functional testing logs - V1.0 and V1.1
+#### Version 1.0
 This test log is for the purposes of recording the results of the MFT test cases being conducted as part of the initial testing on V1.0
 
 | MFT Test Case | Result | Bug Report | 
@@ -141,7 +141,9 @@ This test log is for the purposes of recording the results of the MFT test cases
 | 39 | Failure | 2 - Existing Bug | 
 | 40 | Failure | 2 - Existing Bug | 
 
-### Version 1.1
+MFT for V1.0 resulted in 3 new bugs being reported, for a total of 9.
+
+#### Version 1.1
 This test log is for the purposes of recording the results of the MFT test cases being conducted as a part of regression testing V1.1.
 
 | MFT Test Case | Result | Bug Report | 
@@ -187,17 +189,18 @@ This test log is for the purposes of recording the results of the MFT test cases
 | 39 | Failure | 2 - Existing Bug | 
 | 40 | Failure | 2 - Existing Bug | 
 
+Re-evaluating the results of the bug list from V1.0 on the new version, as well as re-conducting MFT on V1.1 resulted in 7 bugs being resolved, 3 being active, and 4 new bugs being reported.
+
 A final consolidated report of all of the individual bug reports and fixes is available in the attached [Azure Bug Reports Spreadsheet](SENG637-Azure-Bug-Report.xlsx)
 
 # Comparison of exploratory and manual functional testing
 
-During this assignment, both Exploratory and Manual Functional Testing were used, and both resulted in bugs being discovered and reported, including several overlapping reports. Exploratory testing intially found 6 bugs on Version 1.0 of the SUT. MFT on the same version confirmed 5 of those bugs, and found 3 additional bugs. Overall, both were effective at finding bugs, however the exploratory testing did manage to find a critical, high-priority bug (#7) that MFT missed.
+During this assignment, both Exploratory and Manual Functional Testing were used, and both resulted in bugs being discovered and reported, including several overlapping reports. Exploratory testing intially found 6 bugs on Version 1.0 of the SUT. MFT on the same version confirmed 5 of those bugs, and found 3 additional bugs. Overall, both were effective at finding bugs, however the exploratory testing did manage to find a critical, high-priority bug (#7) that MFT missed. V1.1 was only tested with MFT, so no comparisons can be made.
 
 #### Bugs found in V1.0 by method
 | Exploratory Only | MFT Only | Both |
 | :---: | :---: | :---: | 
-| 1 | 3 | 5 |
-
+| 1 | 4 | 5 |
 
 
 ### Exploratory Testing
