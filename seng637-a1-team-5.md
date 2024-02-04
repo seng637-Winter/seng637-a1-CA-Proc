@@ -69,7 +69,7 @@ This log summarizes the notes that the pair testers took when conducting explora
 | User inserts card | Valid Card number | Invalid Card Number | 
 | User enters pin | Valid pin for valid card | Invalid pin for valid card |
 | Cash withdrawal | Amount less than in account | Amount more than in account | 
-| Deposit money   | 
+| Deposit money   | Correct deposit | Invalid Amounts
 | Transfer Money  | Amount less than in account 1 | Amount more than in account 1|
 | Balance Inquiry | Account listed on the display | Invalid account |
 | Operator switch | Toggled while no customer present | Toggled while customer is present | 
