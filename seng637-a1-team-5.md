@@ -42,7 +42,9 @@ As this was exploratory rather than scripted, our testing plan was not intended 
 
 We felt that this framework would allow us to give a wide span of attention to the overall performance of the system, and give insight into any areas which would warrant further attention if necessary for a more in-depth series of tests.
 
-### High-level exploratory testing framework: 
+### High-level testing plan: 
+#### Type
+- Exploratory
 #### Objective
 - Provide broad test coverage of the entire SUT, while allowing for the focused inspection of any areas of concern, and deep probing of any discovered errors.
 #### Scope
