@@ -16,8 +16,7 @@
 
 [1 Introduction](#Introduction)
 
-[2 High-level description of the exploratory testing plan]
-(#High-level description-of-the-exploratory-testing-plan)
+[2 High level description of the exploratory testing plan](#High-level-description-of-the-exploratory-testing-plan)
 
 [3 Comparison of exploratory and manual functional testing](#Comparison-of-exploratory-and-manual-functional-testing)
 
@@ -35,7 +34,7 @@ During this lab, we will be conducting different testing methods (Exploratory Te
 
 All of the group members have prior experience with exploratory software testing, and two of them have conducted manual functional testing prior to this lab in previous work. 
 
-# High-level description of the exploratory testing plan
+# High level description of the exploratory testing plan
 
 In order to create a useful exploratory testing plan, all members needed to be familiar with the SUT. First we reviewed the requirements document contained within Appendix B. This review identified a number of system behaviours and constraints that the software must meet. As well, each team member independently completed the system familiarization, outlined within the assignment document.
 
