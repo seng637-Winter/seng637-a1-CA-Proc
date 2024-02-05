@@ -14,19 +14,20 @@
 (When you finish writing, update the following list using right click, then
 “Update Field”)
 
-[1 Introduction	1](#_Toc439194677)
+[1 Introduction](#Introduction)
 
-[2 High-level description of the exploratory testing plan	1](#_Toc439194678)
+[2 High-level description of the exploratory testing plan]
+(#High-level description-of-the-exploratory-testing-plan)
 
-[3 Comparison of exploratory and manual functional testing	1](#_Toc439194679)
+[3 Comparison of exploratory and manual functional testing](#Comparison-of-exploratory-and-manual-functional-testing)
 
-[4 Notes and discussion of the peer reviews of defect reports	1](#_Toc439194680)
+[4 Notes and discussion of the peer reviews of defect reports](#Notes-and-discussion-of-the-peer-reviews-of-defect-reports)
 
 [5 How the pair testing was managed and team work/effort was
-divided	1](#_Toc439194681)
+divided](#How-the-pair-testing-was-managed-and-team-work/effort-was-divided)
 
 [6 Difficulties encountered, challenges overcome, and lessons
-learned	1](#_Toc439194682)
+learned](#Difficulties-encountered,-challenges-overcome,-and-lessons-learned)
 
 # Introduction
 
@@ -38,7 +39,7 @@ All of the group members have prior experience with exploratory software testing
 
 In order to create a useful exploratory testing plan, all members needed to be familiar with the SUT. First we reviewed the requirements document contained within Appendix B. This review identified a number of system behaviours and constraints that the software must meet. As well, each team member independently completed the system familiarization, outlined within the assignment document.
 
-As this was exploratory rather than scripted, our testing plan was not intended to be fully exhaustive. Instead we proposed to provide opportunities to explore most or all of the use cases, and to perform roughly two tests for every major system behavior listed in the requirements document. We wanted the tester to explore one positive test (normal behaviour expected to function normally), and one negative test where possible (abnormal behaviour expected to fail). We also encouraged exploring any specific constraints outlined within the requirements document (eg. only dispensing $20 bills). Testers were encouraged to dig deeper if they saw any errors, or were curious about a behaviour. When a function could have multiple options such as transferring money between a selection of accounts, testers weren't directed to exhaustively test all the options, but to only pick one or two. This is an area that could be investigated further during scripted or exhaustive testing. 
+As this was exploratory rather than scripted, our testing plan was not intended to be fully exhaustive. Instead, we proposed to provide opportunities to explore most or all of the use cases, and to perform roughly two tests for every major system behavior listed in the requirements document. We wanted the tester to explore one positive test (normal behaviour expected to function normally), and one negative test where possible (abnormal behaviour expected to fail). We also encouraged exploring any specific constraints outlined within the requirements document (eg. only dispensing $20 bills). Testers were encouraged to dig deeper if they saw any errors, or were curious about a behaviour. When a function could have multiple options such as transferring money between a selection of accounts, testers weren't directed to exhaustively test all the options, but to only pick one or two. This is an area that could be investigated further during scripted or exhaustive testing. 
 
 We felt that this framework would allow us to give a wide span of attention to the overall performance of the system, and give insight into any areas which would warrant further attention if necessary for a more in-depth series of tests.
 
@@ -232,7 +233,11 @@ Overall, both testing methods were valuable in testing the system.
 
 # Notes and discussion of the peer reviews of defect reports
 
-Text…
+Peer-reviewing the defect reports ensured consistency across the bug reports and allowed the group to have useful discussions about various system behaviours. For example, one group had initially reported that the receipt remaining on the screen after the ATM ejected the user’s card was a bug since sensitive information about the user was potentially being exposed to other ATM users. However, after discussion during the peer review, it was decided by the group that this was the intended system behaviour as real ATMs cannot dispose of receipts and expect the user to take the receipt with them before they leave. 
+
+The major drawback to peer reviews of defect reports was that the majority of bugs reported were already included in each group’s report. While this cross examination ensured the legitimacy of each bug, it resulted in a large duplication of work that likely decreased the efficiency of the testing operations. 
+
+Overall, the group found peer reviewing of defect reports to be a valuable exercise that increased the quality of the final bug report. In the future, the team will weigh the costs and benefits of peer testing as it pertains to their project sensitivity and timeline when creating a testing plan. 
 
 # How the pair testing was managed and team work/effort was divided 
 
